@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<title>Welcome to KedAnshi_Gadget_Store!</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+#home{
+	background-image:url("pics/13.jpeg");
+}
+
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+<i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#buynew" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BUY</a>
+    <a href="#sell" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SELL</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOG IN</a>
+     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGN UP</a></div>
+    
+  </div>
+</div>
+
+
+
+  <!-- Home Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;" id="home">
+    <h2 class="w3-wide"><i>KedAnshi_Gadget_Store</i></h2>
+    <br>
+    <h4 class="w3-justify"> 
+	Gadget_Store is the most powerful product discovery platform on the web, helping you find the latest and greatest gadgets, products and crowdfunding technologies.You can buy and sell gadgets too
+	. We also provide loan and insurance options.
+	We are the top branding leaders in gadgets trading.
+	</h4>
+  </div>
+
+  <!-- How it works Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h1>How KedAnshi_Gadget's Trade Works?</h1>
+
+      <p class="w3-text-grey">KedAnshi_Gadget_Store has partnered with ober 20 domestic and International Tech Brands <br>
+	  to provide a wide range of options to choose that best suits your needs.
+		<br>
+		<br>
+		We sell both New and Used Gadgets. We make sure that used gadgets have all required documents and
+	 and the condition of the used Gadget is verified by our staff. 
+	 <br>
+	 We provide services for both used and new Gadgets which includes a wide range of modifications . 
+	 <br>
+	 <br>We also have collaborated with Banks and Insurance providers 
+	 to provide a number of Insurance and Loan options</p>
+  </div>
+    </div>
+  </div>
+  
+  
+  <!-- Buy New Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; margin-top:800px;" id="buynew">
+    <h1 class="w3-wide"><i>WHAT ARE YOU LOOKING FOR?</i></h1>
+    <br>
+	<br>
+    <div class="container-fluid bg-3 text-center" id="carselectnew">
+  <form action="gadgetview.php" method="post">
+Select Brand : <select name="brand">
+
+        <option value="SONY">SONY</option>
+        <option value="TOSHIBA">TOSHIBA</option>
+        <option value="SAMSUNG">SAMSUNG</option>
+        <option value="PHILIPS">PHILIPS</option>
+        <option value="LG">LG</option>
+        <option value="BEATS">BEATS</option>
+        <option value="DELL">DELL</option>
+        <option value="ACER">ACER</option>
+       
+ <option value="MSI">MSI</option>
+      
+  <option value="ALIENWARE">ALIENWARE</option>
+        <option value="RAZOR">RAZOR</option>
+      
+  <option value="MOTOROLA">MOTOROLA</option>
+    
+  </select>
+  
+Select Gadget Type :
+<select name="gadgettype">
+
+    <option value="Mobile">Mobile</option>
+    <option value="Headphones">Headphones</option>
+    <option value="Gaming Stuffs">Gaming Stuffs</option>
+<option value="watch">watch</option>
+  </select>
+  <br>
+  <button class="w3-button w3-black w3-section w3-right" type="submit" value="submit" style="margin-right:350px">Purchase</button>
+  
+  </form>
+  </div>	
+	</h4>
+  </div>
+  
+
+  
+  
+<!-- Sell -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; margin-top:700px;" id="sell">
+   
+ <h1 class="w3-wide"><i>Wanna Sell Something??</i></h1>
+    <br>
+	<br>
+    <div class="container-fluid bg-3 text-center" id="carselectused">
+  <form action="gadgetsell.php" method="post">
+Select Brand : <select name="brand">
+       
+        <option value="SONY">SONY</option>
+        <option value="TOSHIBA">TOSHIBA</option>
+        <option value="SAMSUNG">SAMSUNG</option>
+        <option value="PHILIPS">PHILIPS</option>
+        <option value="LG">LG</option>
+        <option value="BEATS">BEATS</option>
+        <option value="DELL">DELL</option>
+        <option value="ACER">ACER</option>
+       
+ <option value="MSI">MSI</option>
+      
+  <option value="ALIENWARE">ALIENWARE</option>
+        <option value="RAZOR">RAZOR</option>
+      
+  <option value="MOTOROLA">MOTOROLA</option>
+    
+  </select><br>
+
+Select Gadget Type :
+<select name="gadgettype">
+
+    <option value="Mobile">Mobile</option>
+    <option value="Headphones">Headphones</option>
+    <option value="Gaming Stuffs">Gaming Stuffs</option>
+  </select>
+  <br>
+  
+ Enter gadget Name :
+ <input type="text" name="gadgetname"><br>
+  
+  
+  operation Type
+  <select name="operationtype">
+        <option value="dell">screentouch</option>
+        <option value="dell">Manual</option>
+  </select>
+  <br>
+  
+  Colour
+  <select name="colour">
+        <option value="samsung">Red</option>
+        <option value="lg">Black</option>
+		<option value="beats">White</option>
+		<option value="acer">Yellow</option>
+		<option value="msi">Melon</option>
+ </select>
+ <br>
+ 
+memory
+ <input type="text" name="memory">
+ <br>
+ 
+ Price
+ <input type="text" name="price">
+ <br>
+ 
+ <button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit" style="margin-right:350px">Submit</button>
+  </form>
+  </div>  
+ <!-- Insurance -->
+ <style>
+ .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+</style>
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; margin-top:700px;" id="insurance">
+ <form>
+ <h1>Choose from following avaiable Insurance Providers</h1>
+ <p>Choose an insurance and click submit to view details<p>
+ <br>
+ <br>
+<label class="container">Bajaj
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Birla
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">SBI
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">TATA
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Reliance
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit" style="margin-right:330px">Submit</button> 
+
+</form>
+</div>
+
+
+ <!-- Loan Section -->
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px; margin-top:700px;" id="loan">
+ <form>
+ <h1>Choose from following avaiable Loan Providers</h1>
+ <p>Choose a bank and click submit to view details<p>
+ <br>
+ <br>
+<label class="container">HDFC
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">ICICI
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">SBI
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">AXIS Bank
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Bank of Maharashtra
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit" style="margin-right:330px">Submit</button> 
+
+</form>
+</div>
+
+ 
+    
+  
+  
+  
+ </div>
+   
+ 
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px; margin-top:500px; margin-bottom:500px;" id="contact" >
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>For any queries or feedback , contact us</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+ <i class="fa fa-map-marker" style="width:30px"></i> Jain University , Bangalore<br><i class="fa fa-phone" style="width:30px"></i> Phone: 9663821592<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: kp063731@gmail.com<br>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Content -->
+</div>
+
+
+  
+
+
+</body>
+</html>
